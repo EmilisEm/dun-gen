@@ -1,12 +1,17 @@
 import React from "react";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import {} from "@fortawesome/free-solid-svg-icons";
+import { faCaretSquareDown } from "@fortawesome/free-solid-svg-icons";
+import style from "./HeroStyle.module.css";
 
 const HeroDropdown = () => {
+  const scrollToGen = () => {
+    const element = document.getElementById("generator");
+    element.scrollIntoView({ behavior: "smooth" });
+  };
   return (
-    <div>
-      <FontAwesomeIcon icon="fa-sharp fa-solid fa-square-caret-down" />
-    </div>
+    <button className={style.HeroDropdown} onClick={scrollToGen}>
+      <FontAwesomeIcon icon={faCaretSquareDown} />
+    </button>
   );
 };
 

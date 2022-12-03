@@ -1,0 +1,53 @@
+.Map {
+   height: 100vh;
+   display: flex;
+   flex-direction: column;
+   justify-content: center;
+   align-items: center;
+}
+
+.Map h2 {
+    margin-bottom: 0.5rem;
+    font-size: var(--font-medium);
+    font-weight: bold;
+    letter-spacing: 3px;
+}
+
+.DungMap {
+    display: grid;
+    margin: 0 auto;
+    overflow: hidden;
+    width: 80vw;
+    max-width: 500px;
+    height: 80vw;
+    max-height: 500px;
+    border: dashed var(--color-black) 3px;
+}
+
+.CharacterDisplay {
+    width: 80%;
+    max-width: 320px;
+    height: 80%;
+    max-height: 320px;
+    border: dashed var(--color-black) 3px;
+    padding: 1rem;
+}
+
+.MapTile {
+    width: 100%;
+}
+
+.Button {
+    border: none;
+    background-color: var(--color-black);
+    color: var(--color-white);
+    font-weight: bold;
+    letter-spacing: 3px;
+    padding: 0.5rem;
+    margin-top: 0.5rem;
+    width: 80%;
+    max-width: 320px;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: var(--font-medium);
+}

@@ -1,0 +1,150 @@
+.Generator {
+    position: relative;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.GeneratorDunForm {
+    width: 90vw;
+    max-width: 800px;
+    display: flex;
+    flex-direction: column;
+    font-weight: bold;
+    letter-spacing: 3px;
+}
+
+.formControl {
+    margin-bottom: 2rem;
+}
+
+.formControl input {
+    width: 100%;
+    height: 2.5rem;
+    font-size: var(--font-small);
+    letter-spacing: 3px;
+    border: solid var(--color-black) 2px;
+    
+}
+
+.formControl label {
+    font-size: var(--font-medium);
+}
+
+.GeneratorDunForm button {
+    border: none;
+    background-color: var(--color-black);
+    color: var(--color-white);
+    font-weight: bold;
+    letter-spacing: 3px;
+    padding: 0.5rem;
+    margin-top: 0.5rem;
+    width: 100%;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: var(--font-medium);
+}
+
+.GeneratorDunForm button[type="submit"] {
+   text-transform: uppercase;
+}
+
+.GeneratorSelect {
+    width: 100%;
+    max-width: 800px;
+    margin-bottom: 0.5rem;
+    display: flex;
+    justify-content: space-around;
+}
+
+
+.GeneratorSelect button {
+    border: solid var(--color-black) 2px;
+    background-color: var(--color-white);
+    color: var(--color-black);
+    font-weight: bold;
+    letter-spacing: 3px;
+    padding: 0.5rem;
+    margin: 0 2rem;
+    width: 100%;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: var(--font-medium);
+    transition: var(--trans);
+}
+
+@media only screen and (max-width: 700px) {
+    .GeneratorSelect button {
+        margin: 0 1rem;
+    }
+}
+
+.GeneratorSelect .activeButton {
+    background-color: var(--color-black);
+    color: var(--color-white);
+}
+
+.GeneratorCharForm {
+    width: 90vw;
+    max-width: 800px;
+    display: flex;
+    flex-direction: column;
+    font-weight: bold;
+    letter-spacing: 3px;
+}
+
+.GeneratorCharForm button {
+    border: none;
+    background-color: var(--color-black);
+    color: var(--color-white);
+    font-weight: bold;
+    letter-spacing: 3px;
+    padding: 0.5rem;
+    margin-top: 0.5rem;
+    width: 100%;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: var(--font-medium);
+}
+
+.GeneratorCharForm button[type="submit"] {
+    text-transform: uppercase;
+}
+
+.GeneratorCharForm label {
+    min-width: 20%;
+    width: auto;
+}
+.GeneratorCharForm select {
+    width: 100%;
+        height: 2.5rem;
+        font-size: var(--font-small);
+        letter-spacing: 3px;
+        border: solid var(--color-black) 2px;
+}
+
+.GeneratorBackground1 {
+    display: none;
+}
+
+.GeneratorBackground2 {
+    display: none;
+}
+
+@media only screen and (min-width: 1200px) {
+    .GeneratorBackground1 {
+        display: block;
+        position: absolute;
+        right: -9%;
+        top: 55%;
+    }
+
+    .GeneratorBackground2 {
+        display: block;
+        position: absolute;
+        left: -9%;
+        bottom: 55%;
+    }
+}

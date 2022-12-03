@@ -1,0 +1,130 @@
+.Hero {
+    position: relative;
+    height: calc(100vh - 65px);
+    margin: 0;
+    padding: 0;
+    display: flex;
+    position:relative;
+    background-color: var(--color-white);
+    
+}
+
+.HeroText {
+    width: 90%;
+    max-width: 800px;
+    margin: 0 auto;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    letter-spacing: 2px;
+}
+
+.HeroText p {
+    margin-top: 1rem;
+    padding: 0 1rem;
+}
+
+
+.HeroDropdown {
+    position: absolute;
+    z-index: 2;
+    bottom: 10%;
+    left: 50%;
+    transform: translate(-50%);
+    cursor: pointer;
+    border: none;
+    background-color: transparent;
+    animation: upDown 1s infinite alternate;
+}
+
+.HeroDropdown svg {
+    width: 80px;
+    height: 80px;
+    fill: var(--color-black);
+}
+
+.HeroDropdown path {
+    fill: var(--color-black);
+}
+
+
+@keyframes upDown {
+    0% {bottom: 10%}
+    100% {bottom: 9%}
+}
+
+.HeroBackground1 {
+    position: absolute;
+    right: -5%;
+    top: 55%;
+}
+
+.HeroBackground2 {
+    position: absolute;
+    left: -5%;
+    bottom: 50%;
+}
+@media only screen and (max-width: 1200px) {
+    .HeroBackground1 {
+        position: absolute;
+        right: -12%;
+        top: 55%;
+    }
+
+    .HeroBackground2 {
+        position: absolute;
+        left: -12%;
+        bottom: 65%;
+    }
+}
+
+@media only screen and (max-width: 800px) {
+    .HeroBackground1 {
+        height: 220px;
+        position: absolute;
+        right: -25%;
+        top: 70%;
+    }
+
+    .HeroBackground2 {
+        height: 220px;
+        position: absolute;
+        left: -25%;
+        bottom: 70%;
+    }
+}
+
+@media only screen and (max-width: 500px) {
+    .HeroBackground1 {
+        height: 220px;
+
+        position: absolute;
+        right: -20%;
+        top: 70%;
+    }
+
+    .HeroBackground2 {
+        height: 220px;
+        position: absolute;
+        left: -15%;
+        bottom: 70%;
+    }
+}
+
+@media only screen and (max-width: 300px) {
+    .HeroBackground1 {
+        height: 150px;
+
+        position: absolute;
+        right: -22%;
+        top: 70%;
+    }
+
+    .HeroBackground2 {
+        height: 150px;
+        position: absolute;
+        left: -15%;
+        bottom: 80%;
+    }
+}
